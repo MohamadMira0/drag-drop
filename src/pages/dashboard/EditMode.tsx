@@ -139,7 +139,7 @@ export default function EditMode() {
               height: item.size?.height || 150,
             }}
             bounds="parent"
-            onDragStop={(e, d) => {
+            onDragStop={(_e, d) => {
               const current = droppedItems[index];
               const newPosition = { x: d.x, y: d.y };
 
@@ -169,7 +169,7 @@ export default function EditMode() {
 
               updateItemPosition(index, newPosition);
             }}
-            onResizeStop={(e, direction, ref, delta, position) => {
+            onResizeStop={(_e, _direction, ref, _delta, position) => {
               updateItemSize(
                 index,
                 {
