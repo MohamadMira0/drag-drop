@@ -108,7 +108,7 @@ export default function EditMode() {
   return (
     <EditModeLayouts>
       {hasChanges && (
-        <div className="flex justify-end items-center gap-2 my-2 me-10">
+        <div className="flex justify-start items-center gap-2 my-2 me-64">
           <button
             className="text-[#E34F27] flex items-center gap-1 py-2 px-4 cursor-pointer"
             onClick={discardChanges}
